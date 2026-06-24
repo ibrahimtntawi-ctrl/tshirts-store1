@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تيشيرتات تخرج الثانوية العامة 2026 🎓</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* إعدادات المتغيرات والألوان الأساسية */
+        :root {
+            --primary-purple: #6d28d9;
+            --primary-purple-hover: #5b21b6;
+            --light-purple: #ede9fe;
+            --gold: #d97706;
+            --gold-light: #fef3c7;
+            --gold-glow: #fbbf24;
+            --dark-bg: #0f172a;
+            --card-bg: #1e293b;
+            --white: #ffffff;
+            --text-muted: #94a3b8;
+            --success: #22c55e;
+            --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+            --shadow-md: 0 10px 15px -3px rgba(0,0,0,0.3);
+            --shadow-lg: 0 20px 25px -5px rgba(0,0,0,0.5);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* إعادة تعيين المظهر العام */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Cairo', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #090d16;
+            color: var(--white);
+            line-height: 1.6;
+            overflow-x: hidden;
+            padding-bottom: 60px; /* مساحة لزر الواتساب الثابت */
+        }
+
+        /* تأثيرات التحميل والتنقل */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInVisible 0.8s forwards ease-out;
+        }
+        @keyframes fadeInVisible {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* زر العودة لأعلى */
+        #backToTop {
+            position: fixed;
+            bottom: 85px;
+            right: 20px;
+            background: var(--primary-purple);
+            color: white;
+            border: none;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            box-shadow: var(--shadow-md);
+            z-index: 99;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+        }
+        #backToTop.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        #backToTop:hover {
+            background: var(--gold);
+            transform: translateY(-5px);
+        }
+
+        /* الإشعارات الحية التفاعلية لخلق الحماس (FOMO) */
+        .live-notification {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: var(--card-bg);
+            border-left: 4px solid var(--gold);
+            padding: 12px 20px;
+            border-radius: 8px;
+            box-shadow: var(--shadow-lg);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transform: translateX(-150%);
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            font-size: 0.9rem;
+            max-width: 320px;
+        }
+        .live-notification.show {
+            transform: translateX(0);
+        }
+        .notification-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--success);
+            border-radius: 50%;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(0.95); opacity: 0.5; }
+            50% { transform: scale(1.2); opacity: 1; }
+            100% { transform: scale(0.95); opacity: 0.5; }
+        }
+
+        /* الهيدر وشريط الإحصائيات العلوي */
+        .top-bar {
+            background: linear-gradient(90deg, var(--primary-purple), #4c1d95);
+            text-align: center;
+            padding: 8px 10px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .counter-badge {
+            background: var(--gold);
+            color: #000;
+            padding: 2px 8px;
+            border-radius: 20px;
+            font-weight: 800;
+        }
+
+        header {
+            padding: 20px;
+            text-align: center;
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        header h1 {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--white);
+        }
+        header h1 span {
+            color: var(--gold);
+        }
+
+        /* القسم الرئيسي - Hero Section */
+        .hero {
+            position: relative;
+            padding: 60px 20px 80px 20px;
+            text-align: center;
+            background: radial-gradient(circle at center, rgba(109, 40, 217, 0.15) 0%, rgba(9, 13, 22, 0) 70%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-tag {
+            background: rgba(109, 40, 217, 0.2);
+            border: 1px solid var(--primary-purple);
+            color: #c084fc;
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .hero h2 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            line-height: 1.3;
+            margin-bottom: 15px;
+            color: var(--white);
+            text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+
+        .hero h2 span {
+            background: linear-gradient(to left, var(--gold-glow), #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin-bottom: 35px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+            max-width: 320px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+            gap: 10px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-purple), #7c3aed);
+            color: var(--white);
+            box-shadow: 0 4px 20px rgba(109, 40, 217, 0.4);
+            animation: pulse-glow 2s infinite;
+        }
+
+        @keyframes pulse-glow {
+            0% { box-shadow: 0 0 0 0 rgba(109, 40, 217, 0.5); }
+            70% { box-shadow: 0 0 0 15px rgba(109, 40, 217, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(109, 40, 217, 0); }
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            background: linear-gradient(135deg, #7c3aed, var(--primary-purple));
+        }
+
+        .btn-gold {
+            background: linear-gradient(135deg, var(--gold), #f59e0b);
+            color: #000;
+            box-shadow: 0 4px 15px rgba(217, 119, 6, 0.3);
+        }
+
+        .btn-gold:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(217, 119, 6, 0.5);
+        }
+
+        /* شريط الميزات */
+        .features-bar {
+            background: var(--card-bg);
+            padding: 20px 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            text-align: center;
+            border-y: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .feature-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--white);
+        }
+
+        .feature-icon {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        /* قسم رحلة الشراء المبسطة */
+        .section-title {
+            text-align: center;
+            padding: 50px 20px 20px 20px;
+            font-size: 1.6rem;
+            font-weight: 800;
+        }
+        .section-title span {
+            color: var(--primary-purple);
+        }
+
+        .journey {
+            padding: 20px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .step-card {
+            background: rgba(30, 41, 59, 0.5);
+            border: 1px solid rgba(255,255,255,0.05);
+            padding: 15px 20px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            position: relative;
+        }
+
+        .step-num {
+            background: var(--gold);
+            color: #000;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 1rem;
+            flex-shrink: 0;
+        }
+
+        .step-text {
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        /* قسم المنتجات والبطاقات الاحترافية */
+        .products-container {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            max-width: 450px;
+            margin: 0 auto;
+        }
+
+        /* تصميم الكارد الاحترافي */
+        .product-card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(109, 40, 217, 0.3);
+        }
+
+        /* عرض وتبديل الصور الأمامية والخلفية */
+        .image-container {
+            width: 100%;
+            height: 340px;
+            position: relative;
+            background: #151f32;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.4s ease;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .product-image.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        /* أزرار تبديل العرض (وش / ضهر) */
+        .view-toggler {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(5px);
+            padding: 4px;
+            border-radius: 30px;
+            display: flex;
+            gap: 5px;
+            z-index: 10;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .toggle-btn {
+            border: none;
+            background: transparent;
+            color: var(--white);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .toggle-btn.active {
+            background: var(--primary-purple);
+            color: var(--white);
+        }
+
+        /* تفاصيل المنتج داخل الكارد */
+        .product-info {
+            padding: 25px;
+        }
+
+        .product-title {
+            font-size: 1.4rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            color: var(--white);
+        }
+
+        .product-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+
+        .price-tag {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .price-current {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--gold-glow);
+        }
+
+        .price-currency {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--gold);
+        }
+
+        .price-badge {
+            background: rgba(34, 197, 94, 0.15);
+            color: var(--success);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            margin-right: auto;
+        }
+
+        /* قسم الدفع فودافون كاش */
+        .payment-section {
+            padding: 40px 20px;
+            background: linear-gradient(180deg, #090d16 0%, #151226 100%);
+            text-align: center;
+        }
+
+        .payment-card {
+            background: var(--card-bg);
+            border: 2px dashed rgba(109, 40, 217, 0.4);
+            border-radius: 20px;
+            padding: 30px 20px;
+            max-width: 450px;
+            margin: 0 auto;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .vodafone-logo {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .payment-card h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .number-box {
+            background: #0f172a;
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 12px;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--gold-glow);
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .number-box:active {
+            transform: scale(0.98);
+        }
+
+        .copy-tooltip {
+            font-size: 0.75rem;
+            background: var(--primary-purple);
+            color: white;
+            padding: 2px 6px;
+            border-radius: 4px;
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .alert-box {
+            background: rgba(217, 119, 6, 0.1);
+            border: 1px solid rgba(217, 119, 6, 0.3);
+            color: #fbbf24;
+            padding: 12px;
+            border-radius: 10px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-top: 15px;
+        }
+
+        /* قسم نموذج الطلب وجوجل فورم */
+        .form-section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .iframe-container {
+            width: 100%;
+            max-width: 500px;
+            height: 600px;
+            margin: 20px auto;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid rgba(255,255,255,0.05);
+            background: #fff;
+        }
+
+        .iframe-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* قسم آراء الطلاب العملاء */
+        .testimonials {
+            padding: 40px 20px;
+            background: #090d16;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            max-width: 450px;
+            margin: 0 auto;
+        }
+
+        .testimonial-card {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.03);
+        }
+
+        .student-profile {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .student-avatar {
+            width: 40px;
+            height: 40px;
+            background: var(--primary-purple);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+
+        .student-info h4 {
+            font-size: 0.95rem;
+            font-weight: 700;
+        }
+        
+        .student-info p {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .testimonial-text {
+            font-size: 0.9rem;
+            color: #e2e8f0;
+            font-style: italic;
+        }
+
+        /* قسم الدعم الفني والاستفسارات */
+        .contact-section {
+            padding: 50px 20px;
+            text-align: center;
+            background: linear-gradient(0deg, #090d16 0%, #131024 100%);
+        }
+
+        .contact-section p {
+            color: var(--text-muted);
+            margin-bottom: 25px;
+            font-size: 1rem;
+        }
+
+        /* زر واتساب العائم الثابت سفلياً */
+        .whatsapp-floating {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25d366;
+            color: white;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            z-index: 999;
+            text-decoration: none;
+            font-size: 1.8rem;
+            transition: var(--transition);
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        .whatsapp-floating:hover {
+            transform: scale(1.1);
+            background: #20ba5a;
+        }
+
+        /* التذييل النهائي */
+        footer {
+            background: #06080e;
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+
+        footer p span {
+            color: var(--gold);
+            font-weight: 700;
+        }
+
+        /* تحسينات للشاشات الأكبر حجماً (التابلت والكمبيوتر) */
+        @media (min-width: 768px) {
+            header h1 { font-size: 1.8rem; }
+            .hero h2 { font-size: 3.2rem; }
+            .hero p { font-size: 1.3rem; }
+            .products-container {
+                grid-template-columns: repeat(2, 1fr);
+                max-width: 900px;
+            }
+            .image-container { height: 400px; }
+            .testimonial-grid {
+                grid-template-columns: repeat(2, 1fr);
+                max-width: 900px;
+            }
+            .features-bar {
+                max-width: 800px;
+                margin: 0 auto;
+                border-radius: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <span>🔥 الطلبات المتبقية لخصم الدفعة الأولى:</span>
+        <span class="counter-badge" id="ordersCounter">14 تيشيرت فقط!</span>
+    </div>
+
+    <header>
+        <h1>🎓 تيشيرتات تخرج <span>الثانوية العامة 2026</span> 🎓</h1>
+    </header>
+
+    <section class="hero fade-in">
+        <div class="hero-tag">✨ إصدار محدود لدفعة 2026 فقط</div>
+        <h2>خلي ذكريات الثانوية العامة<br><span>تعيش معاك للأبد 💜 ✨</span></h2>
+        <p>تيشيرت تخرج فخم بجودة قطن ممتازة وطباعة ثابتة، صُمم خصيصاً ليوثق أجمل لقطات رحلتكم الملحمية.</p>
+        
+        <div class="hero-buttons">
+            <a href="#products" class="btn btn-primary">اطلب دلوقتي 🚀</a>
+            <a href="#payment" class="btn btn-gold">احجز تيشيرتك 🔥</a>
+        </div>
+    </section>
+
+    <div class="features-bar fade-in">
+        <div class="feature-item">
+            <span class="feature-icon">💯</span>
+            <span>قطن طبيعي 100%</span>
+        </div>
+        <div class="feature-item">
+            <span class="feature-icon">🧼</span>
+            <span>طباعة مقاومة للغسيل</span>
+        </div>
+        <div class="feature-item">
+            <span class="feature-icon">⚡</span>
+            <span>توصيل سريع ومضمون</span>
+        </div>
+    </div>
+
+    <section class="fade-in">
+        <div class="section-title">رحلة الشراء في <span>ثواني 🚀</span></div>
+        <div class="journey">
+            <div class="step-card">
+                <div class="step-num">1</div>
+                <div class="step-text">اختار موديل التيشيرت بتاعك (بناتي أو شبابي)</div>
+            </div>
+            <div class="step-card">
+                <div class="step-num">2</div>
+                <div class="step-text">حول مبلغ 330 جنيه على فودافون كاش</div>
+            </div>
+            <div class="step-card">
+                <div class="step-num">3</div>
+                <div class="step-text">افتح الفورم وسجل بياناتك وعنوانك بالكامل</div>
+            </div>
+            <div class="step-card">
+                <div class="step-num">4</div>
+                <div class="step-text">مبروك! طلبك اتأكد🎉</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="fade-in">
+        <div class="section-title">اختر <span>تصميمك المفضل 👕</span></div>
+        
+        <div class="products-container">
+            <div class="product-card">
+                <div class="image-container">
+                    <img class="product-image" id="girl-front" src="الصورة 1 التيشيرت البناتي (الوجه الأمامي).jpg" alt="تيشيرت بناتي أمامي">
+					
+					
+                    <img class="product-image hidden" id="girl-back" src="لصورة 2 التيشيرت البناتي (الوجه الخلفي).png" alt="تيشيرت بناتي خلفي">
+                    
+                    <div class="view-toggler">
+                        <button class="toggle-btn active" onclick="switchImage('girl', 'front', this)">من الأمام</button>
+                        <button class="toggle-btn" onclick="switchImage('girl', 'back', this)">من الخلف</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">✨ تيشيرت التخرج البناتي ✨</h3>
+                    <p class="product-desc">قصة مريحة وعصرية تناسب الفتيات، بخامات قطنية ناعمة ومثالية للاحتفال بيوم التخرج.</p>
+                    <div class="price-tag">
+                        <span class="price-current">330</span>
+                        <span class="price-currency">جنيه مصري</span>
+                        <span class="price-badge">شامل الخصم</span>
+                    </div>
+                    <a href="#payment" class="btn btn-primary" style="width: 100%;">اطلب الآن 🚀</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="image-container">
+                    <img class="product-image" id="boy-front" src="التيشيرت الشبابي (الوجه الأمامي).jpg" alt="تيشيرت شبابي أمامي">
+                    <img class="product-image hidden" id="boy-back" src="التيشيرت الشبابي (الوجه الخلفي).jpg" alt="تيشيرت شبابي خلفي">
+                    
+                    <div class="view-toggler">
+                        <button class="toggle-btn active" onclick="switchImage('boy', 'front', this)">من الأمام</button>
+                        <button class="toggle-btn" onclick="switchImage('boy', 'back', this)">من الخلف</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">🔥 تيشيرت التخرج الشبابي 🔥</h3>
+                    <p class="product-desc">تصميم كاجوال وقوي مخصص للشباب، خامات فخمة وتقفيل عالي الجودة يتحمل الحركة والاحتفالات.</p>
+                    <div class="price-tag">
+                        <span class="price-current">330</span>
+                        <span class="price-currency">جنيه مصري</span>
+                        <span class="price-badge">شامل الخصم</span>
+                    </div>
+                    <a href="#payment" class="btn btn-primary" style="width: 100%;">اطلب الآن 🚀</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="payment" class="payment-section fade-in">
+        <div class="section-title">طريقة الدفع <span>المباشرة 📱</span></div>
+        <div class="payment-card">
+            <div class="vodafone-logo">🔴</div>
+            <h3>حول قيمة التيشيرت (330 جنيه) إلى رقم فودافون كاش:</h3>
+            
+            <div class="number-box" onclick="copyNumber()" title="اضغط لنسخ الرقم">
+                <span id="phoneNum">01004222710</span>
+                <span style="font-size: 1rem; color: var(--text-muted);">📋 (اضغط للنسخ)</span>
+                <div class="copy-tooltip" id="tooltip">تم النسخ بنجاح!</div>
+            </div>
+
+            <div class="alert-box">
+                ⚠️ هام جداً: بعد إتمام عملية التحويل، يرجى الانتقال فوراً لملء نموذج الطلب بالأسفل لتسجيل مقاسك وبيانات الشحن.
+            </div>
+        </div>
+    </section>
+
+    <section id="order-form" class="form-section fade-in">
+        <div class="section-title">ملء <span>بيانات الطلب 📝</span></div>
+        <p style="color: var(--text-muted); margin-bottom: 20px;">يرجى تسجيل بياناتك بشكل صحيح لضمان وصول الشحنة دون تأخير</p>
+        
+        <a href="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc7F_j01wmMknddzdzqF35HUiETKAuvVD20ol1VRuNrnP16cg/viewform" target="_blank" class="btn btn-gold" style="margin-bottom: 20px; width: 100%; max-width: 450px;">
+            فتح نموذج الطلب في نافذة مستقلة 📜
+        </a>
+
+        <div class="iframe-container">
+            <iframe src="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc7F_j01wmMknddzdzqF35HUiETKAuvVD20ol1VRuNrnP16cg/viewform?embedded=true">جاري تحميل النموذج...</iframe>
+        </div>
+    </section>
+
+    <section class="testimonials fade-in">
+        <div class="section-title">آراء زملائكم <span>من الدفعات السابقة 💬</span></div>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <div class="student-profile">
+                    <div class="student-avatar">أ</div>
+                    <div class="student-info">
+                        <h4>أحمد محمود</h4>
+                        <p>طالب ثانوي ميكانيكا</p>
+                    </div>
+                </div>
+                <p class="testimonial-text">"الخامة بجد صدمتني من كتر ما هي نظيفة وناعمة والطباعة ثابتة جداً حتى بعد الغسيل المتكرر. شكراً بجد!"</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="student-profile">
+                    <div class="student-avatar">س</div>
+                    <div class="student-info">
+                        <h4>سارة أحمد</h4>
+                        <p>طالبة علمي علوم</p>
+                    </div>
+                </div>
+                <p class="testimonial-text">"التيشيرت البناتي قشته تجنن والـ Size مظبوط بالملي، أحلى ذكرى لتخرجنا لعام 2026 💜✨"</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section fade-in">
+        <div class="section-title">📞 عندك <span>أي استفسار؟</span></div>
+        <p>فريق الدعم متواجد لخدمتك والإجابة على أي سؤال بخصوص المقاسات أو الشحن</p>
+        <a href="https://wa.me/201004222710?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%B9%D9%86%D8%AF%D9%8A%20%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%A8%D8%AE%D8%B5%D9%85%D8%B5%20%D8%AA%D9%8A%D8%B4%D9%8A%D8%B1%D8%AA%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D8%AE%D8%B1%D8%AC." target="_blank" class="btn btn-primary" style="background: #25d366; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);">
+            تواصل عبر واتساب 💬
+        </a>
+    </section>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © 2026 | متجر <span>تيشيرتات تخرج الثانوية العامة</span></p>
+    </footer>
+
+    <a href="https://wa.me/201004222710?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%B9%D9%86%D8%AF%D9%8A%20%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%A8%D8%AE%D8%B5%D9%85%D8%B5%20%D8%AA%D9%8A%D8%B4%D9%8A%D8%B1%D8%AA%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D8%AE%D8%B1%D8%AC." target="_blank" class="whatsapp-floating" title="تواصل معنا عبر الواتساب">
+        💬
+    </a>
+
+    <button id="backToTop" onclick="scrollToTop()" title="العودة للأعلى">▲</button>
+
+    <div class="live-notification" id="liveToast">
+        <div class="notification-dot"></div>
+        <div id="toastText">قام أحد الطلاب بشراء تيشيرت بناتي قبل قليل! 🔥</div>
+    </div>
+
+    <script>
+        // وظيفة تبديل عرض صور المنتج (وش / ضهر) بشكل سلس ومحسن للتعامل مع عناصر الـ img والـ active buttons
+        function switchImage(gender, side, buttonElement) {
+            const frontImg = document.getElementById(`${gender}-front`);
+            const backImg = document.getElementById(`${gender}-back`);
+            
+            // تبديل ظهور الصور المحددة
+            if (side === 'front') {
+                frontImg.classList.remove('hidden');
+                backImg.classList.add('hidden');
+            } else {
+                frontImg.classList.add('hidden');
+                backImg.classList.remove('hidden');
+            }
+            
+            // تعيين الكلاس الفعال للزر المضغوط فقط داخل نفس الـ view-toggler
+            const parentToggler = buttonElement.parentElement;
+            const buttons = parentToggler.getElementsByClassName('toggle-btn');
+            for (let btn of buttons) {
+                btn.classList.remove('active');
+            }
+            buttonElement.classList.add('active');
+        }
+
+        // وظيفة نسخ رقم فودافون كاش
+        function copyNumber() {
+            const numText = document.getElementById('phoneNum').innerText;
+            navigator.clipboard.writeText(numText).then(() => {
+                const tooltip = document.getElementById('tooltip');
+                tooltip.style.opacity = '1';
+                setTimeout(() => { tooltip.style.opacity = '0'; }, 2000);
+            }).catch(err => {
+                alert('فشل نسخ الرقم، يمكنك نقله يدوياً: ' + numText);
+            });
+        }
+
+        // إظهار وإخفاء زر العودة لأعلى عند التمرير
+        window.onscroll = function() {
+            const bttBtn = document.getElementById('backToTop');
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                bttBtn.classList.add('show');
+            } else {
+                bttBtn.classList.remove('show');
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // محاكاة الإشعارات الحية التفاعلية (FOMO) لزيادة حماس الطلاب
+        const notifications = [
+            "قام أحد الطلاب بشراء تيشيرت شبابي قبل قليل! 🔥",
+            "طالبة من علمي علوم حجزت تيشيرت بناتي الآن 🎓✨",
+            "متبقي تيشيرتين فقط في مقاس L للشباب! ⏱️",
+            "طالب من أدبي قام بتحويل فودافون كاش وتأكيد الطلب 🎉"
+        ];
+
+        function showLiveToast() {
+            const toast = document.getElementById('liveToast');
+            const text = document.getElementById('toastText');
+            const randomMsg = notifications[Math.floor(Math.random() * notifications.length)];
+            
+            text.innerText = randomMsg;
+            toast.classList.add('show');
+            
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 4000);
+        }
+
+        // تشغيل الإشعارات بشكل عشوائي ذكي كل 12 إلى 20 ثانية لتبدو طبيعية تماماً
+        setTimeout(function run() {
+            showLiveToast();
+            let randomTime = Math.floor(Math.random() * (20000 - 12000 + 1)) + 12000;
+            setTimeout(run, randomTime);
+        }, 5000);
+    </script>
+</body>
+</html>
